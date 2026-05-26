@@ -14,7 +14,7 @@ const section = content.whatWeDo;
       <img
         src={section.image}
         alt={section.heading}
-        class="h-[480px] w-full object-cover"
+        class="h-[320px] w-full object-cover lg:h-[360px]"
       />
     </div>
 
@@ -23,7 +23,7 @@ const section = content.whatWeDo;
 
       <!-- HEADING -->
       <h2
-        class="text-3xl font-extrabold uppercase tracking-[2px] text-[#111111] lg:text-4xl"
+        class="text-4xl font-extrabold uppercase tracking-[2px] text-[#111111] lg:text-4xl"
       >
         {section.heading}
       </h2>
@@ -33,7 +33,7 @@ const section = content.whatWeDo;
         {
           section.description.map((text) => (
             <p
-              class="text-[15px] leading-[1.9] text-[#6b7280]"
+              class="text-[16px] leading-[1.9] text-[#6b7280]"
             >
               {text}
             </p>

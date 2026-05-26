@@ -1,108 +1,119 @@
 ---
-// src/components/sections/InteriorPricingComparison.astro
+// src/components/sections/InteriorPricingSection.astro
 
 import content from "../data/sec019.json";
 
-const section = content.interiorPricingComparison;
+const headingSection = content.interiorSection;
+const tableSection = content.interiorSection;
 ---
 
-<section class="bg-[#f5f5f5] py-12 lg:py-16">
-  <div class="mx-auto w-[88%] max-w-[1180px]">
+<section class="bg-[#f5f5f5] py-5 lg:py-6">
 
+  <div class="mx-auto w-[88%] max-w-[1240px]">
+
+    <!-- ========================= -->
     <!-- HEADING -->
+    <!-- ========================= -->
+
     <div class="text-center">
+
       <h2
-        class="text-3xl font-light leading-[1.1] tracking-[-1px] text-[#111827] sm:text-5xl lg:text-[44px]"
+        class="text-[30px] font-light leading-[1.1] tracking-[-1px] text-[#111827] lg:text-[48px]"
       >
+
         <span class="font-semibold">
-          {section.headingBold}
+          {headingSection.headingBold}
         </span>
 
-        {section.headingLight}
+        {headingSection.headingLight}
+
       </h2>
 
       <p
-        class="mx-auto mt-3 max-w-[850px] text-[15px] leading-[1.5] text-[#374151] lg:text-[20px]"
+        class="mt-2 text-[16px] leading-[1.4] text-[#374151] lg:text-[16px]"
       >
-        {section.subheading}
+        {headingSection.subheading}
       </p>
+
     </div>
 
+    <!-- ========================= -->
     <!-- TABLE -->
-    <div class="mt-10 overflow-x-auto rounded-[6px]">
+    <!-- ========================= -->
+
+    <div class="mx-auto mt-6 max-w-[900px] overflow-x-auto">
 
       <table
-        class="w-full border-collapse border border-[#9ca3af] bg-transparent"
+        class="w-full border-collapse border border-[#aeb4c0] bg-transparent"
       >
 
         <!-- TABLE HEAD -->
         <thead>
+
           <tr>
 
+            <!-- EMPTY -->
             <th
-              class="border border-[#9ca3af] px-4 py-3 text-left text-[16px] font-medium text-[#111827]"
+              class="w-[34%] border border-[#aeb4c0] px-4 py-3"
             >
             </th>
 
+            <!-- TITLE -->
             <th
-              class="border border-[#9ca3af] px-4 py-3 text-center text-[16px] font-semibold text-[#111827] lg:text-[16px]"
+              class="border border-[#aeb4c0] px-4 py-3 text-center text-[16px] font-semibold text-[#111827] lg:text-[16px]"
             >
-              {section.columnOne}
-            </th>
-
-            <th
-              class="border border-[#9ca3af] px-4 py-3 text-center text-[16px] font-semibold text-[#111827] lg:text-[16px]"
-            >
-              {section.columnTwo}
+              {tableSection.tableHeading}
             </th>
 
           </tr>
+
         </thead>
 
         <!-- TABLE BODY -->
         <tbody>
 
-          {section.rows.map((row) => (
-            <tr>
+          {
+            tableSection.rows.map((item) => (
+              <tr>
 
-              <!-- LEFT TITLE -->
-              <td
-                class="w-[22%] border border-[#9ca3af] px-4 py-3 align-middle text-[14px] font-semibold uppercase leading-[1.3] text-[#1f2937] lg:text-[16px]"
-              >
-                {row.title}
-              </td>
+                <!-- LEFT -->
+                <td
+                  class="border border-[#aeb4c0] px-4 py-4 align-middle text-center text-[16px] font-bold uppercase text-[#111827] lg:text-[16px]"
+                >
+                  {item.title}
+                </td>
 
-              <!-- GOOD -->
-              <td
-                class="w-[39%] border border-[#9ca3af] px-4 py-3 align-top"
-              >
-                <div class="space-y-1">
-                  {row.good.map((item) => (
-                    <p class="text-[14px] leading-[1.5] text-[#374151] lg:text-[15px]">
-                      {item}
-                    </p>
-                  ))}
-                </div>
-              </td>
+                <!-- RIGHT -->
+                <td
+                  class="border border-[#aeb4c0] px-4 py-4 text-center"
+                >
 
-              <!-- BAD -->
-              <td
-                class="w-[39%] border border-[#9ca3af] px-4 py-3 align-top"
-              >
-                <div class="space-y-1">
-                  {row.bad.map((item) => (
-                    <p class="text-[16px] leading-[1.5] text-[#374151] lg:text-[16px]">
-                      {item}
-                    </p>
-                  ))}
-                </div>
-              </td>
+                  <div class="space-y-1">
 
-            </tr>
-          ))}
+                    {
+                      item.points.map((point) => (
+                        <p
+                          class="text-[16px] leading-[1.5] text-[#374151] lg:text-[16px]"
+                        >
+                          {point}
+                        </p>
+                      ))
+                    }
+
+                  </div>
+
+                </td>
+
+              </tr>
+            ))
+          }
 
         </tbody>
+
       </table>
+
     </div>
+
   </div>
+
 </section>
