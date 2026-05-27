@@ -1,0 +1,63 @@
+
+
+{
+  "howItWorksFullSection": {
+
+    "tag": "HOW HAVENLY WORKS",
+
+    "heading": "A modern process for designing your dream space.",
+
+    "description": "From the first style quiz to the final design delivery, we make every step feel effortless and inspiring.",
+
+    "steps": [
+
+      {
+        "step": "01",
+
+        "layout": "double",
+
+        "heading": "Match with one of our talented designers and get inspired.",
+
+        "description": "Take a style quiz to help us get to know you a little bit better, then choose your interior designer from our personalized recommendations. With over 10 years of experience and nearly 1 million designs, our expert team will help you turn your vision into reality.",
+
+        "largeImage": "https://i.pinimg.com/736x/9f/4d/5f/9f4d5f69154aff263a8e0b1a1b49d201.jpg",
+
+        "smallTopImage": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=800&auto=format&fit=crop",
+
+        "smallBottomImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=800&auto=format&fit=crop"
+      },
+
+      {
+        "step": "02",
+
+        "layout": "single",
+
+        "heading": "Partner with your designer to create a home you love.",
+
+        "description": "Great design doesn’t happen alone. Let your designer guide you to solutions that meet your functional needs and products that suit your unique style. See it come to life with a 3D rendering of the design in your actual space.",
+
+        "image": "https://i.pinimg.com/736x/e2/ee/b6/e2eeb6130308792aee613d314a9a5095.jpg"
+      },
+
+      {
+        "step": "03",
+
+        "layout": "split",
+
+        "heading": "Shop exclusive deals, and bring your design home with ease.",
+
+        "description": "Access the best prices on your favorite home brands, get exclusive discounts, and shop everything you need for your space in a single, streamlined checkout. The result? Even better than your dreams.",
+
+        "buttonText": "GET STARTED",
+
+        "buttonLink": "/get-started",
+
+        "leftImage": "https://i.pinimg.com/736x/0f/a1/3d/0fa13d63469df6267cac43fdb11b5825.jpg",
+
+        "rightImage": "https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop"
+      }
+
+    ]
+
+  }
+}
