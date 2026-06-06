@@ -1,0 +1,237 @@
+---
+// src/components/Footer.astro
+
+import content from "../data/sec035.json";
+
+const footer = content.footer;
+---
+
+<footer class="relative overflow-hidden bg-[#0f172a] text-white">
+
+  <!-- TOP GRADIENT -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.06),transparent_35%)]"></div>
+
+  <div class="relative mx-auto w-[92%] max-w-[1450px] py-16 lg:py-20">
+
+    <!-- TOP -->
+    <div
+      class="grid gap-14 border-b border-white/10 pb-14 lg:grid-cols-[1.1fr_0.9fr_0.9fr_1fr]"
+    >
+
+      <!-- BRAND -->
+      <div>
+
+        <!-- LOGO -->
+        <div class="flex items-center gap-4">
+
+          <div
+            class="flex h-[68px] w-[68px] items-center justify-center rounded-2xl bg-gradient-to-br from-[#f59e0b] to-[#fb7185] text-[32px] shadow-lg"
+          >
+            ✦
+          </div>
+
+          <div>
+            <h2 class="text-[28px] font-semibold leading-none">
+              {footer.brand}
+            </h2>
+
+            <p class="mt-2 text-[14px] uppercase tracking-[3px] text-white/60">
+              Outdoor Lighting Experts
+            </p>
+          </div>
+
+        </div>
+
+        <!-- DESC -->
+        <p
+          class="mt-8 max-w-[380px] text-[17px] leading-[1.9] text-white/70"
+        >
+          {footer.description}
+        </p>
+
+        <!-- SOCIAL -->
+        <div class="mt-8 flex items-center gap-4">
+
+          {
+            footer.socials.map((item) => (
+              <a
+                href={item.link}
+                class="flex h-[50px] w-[50px] items-center justify-center rounded-full border border-white/10 bg-white/5 text-[18px] text-white transition duration-300 hover:-translate-y-1 hover:border-[#f59e0b] hover:bg-[#f59e0b]"
+              >
+                {item.icon}
+              </a>
+            ))
+          }
+
+        </div>
+
+      </div>
+
+      <!-- SERVICES -->
+      <div>
+
+        <h3
+          class="text-[26px] font-semibold text-white"
+        >
+          Services
+        </h3>
+
+        <div class="mt-8 space-y-5">
+
+          {
+            footer.services.map((item) => (
+              <a
+                href={item.link}
+                class="group flex items-center gap-3 text-[17px] text-white/75 transition duration-300 hover:text-white"
+              >
+
+                <span
+                  class="h-[7px] w-[7px] rounded-full bg-[#f59e0b] transition duration-300 group-hover:scale-125"
+                ></span>
+
+                {item.name}
+
+              </a>
+            ))
+          }
+
+        </div>
+
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div>
+
+        <h3
+          class="text-[26px] font-semibold text-white"
+        >
+          Quick Links
+        </h3>
+
+        <div class="mt-8 space-y-5">
+
+          {
+            footer.links.map((item) => (
+              <a
+                href={item.link}
+                class="group flex items-center gap-3 text-[17px] text-white/75 transition duration-300 hover:text-white"
+              >
+
+                <span
+                  class="h-[7px] w-[7px] rounded-full bg-[#38bdf8] transition duration-300 group-hover:scale-125"
+                ></span>
+
+                {item.name}
+
+              </a>
+            ))
+          }
+
+        </div>
+
+      </div>
+
+      <!-- CONTACT -->
+      <div>
+
+        <h3
+          class="text-[26px] font-semibold text-white"
+        >
+          Contact
+        </h3>
+
+        <div class="mt-8 space-y-7">
+
+          <!-- PHONE -->
+          <div class="flex gap-4">
+
+            <div
+              class="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-xl bg-white/5 text-[18px]"
+            >
+              ☎
+            </div>
+
+            <div>
+              <p class="text-[14px] uppercase tracking-[2px] text-white/50">
+                Call Us
+              </p>
+
+              <a
+                href={`tel:${footer.phone}`}
+                class="mt-1 block text-[18px] text-white/80 hover:text-white"
+              >
+                {footer.phone}
+              </a>
+            </div>
+
+          </div>
+
+          <!-- EMAIL -->
+          <div class="flex gap-4">
+
+            <div
+              class="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-xl bg-white/5 text-[18px]"
+            >
+              ✉
+            </div>
+
+            <div>
+              <p class="text-[14px] uppercase tracking-[2px] text-white/50">
+                Email
+              </p>
+
+              <a
+                href={`mailto:${footer.email}`}
+                class="mt-1 block break-all text-[18px] text-white/80 hover:text-white"
+              >
+                {footer.email}
+              </a>
+            </div>
+
+          </div>
+
+          <!-- ADDRESS -->
+          <div class="flex gap-4">
+
+            <div
+              class="flex h-[48px] w-[48px] shrink-0 items-center justify-center rounded-xl bg-white/5 text-[18px]"
+            >
+              ⌂
+            </div>
+
+            <div>
+              <p class="text-[14px] uppercase tracking-[2px] text-white/50">
+                Address
+              </p>
+
+              <p class="mt-1 text-[18px] leading-[1.7] text-white/80">
+                {footer.address}
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- BOTTOM -->
+    <div
+      class="flex flex-col items-center justify-between gap-5 pt-8 text-center lg:flex-row"
+    >
+
+      <p class="text-[15px] text-white/50">
+        © 2026 {footer.brand}. All rights reserved.
+      </p>
+
+      <p class="max-w-[720px] text-[14px] leading-[1.8] text-white/40">
+        {footer.disclaimer}
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>

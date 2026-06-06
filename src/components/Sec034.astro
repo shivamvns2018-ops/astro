@@ -1,0 +1,91 @@
+---
+// src/components/sections/OutdoorLightingProcessSection.astro
+
+import content from "../data/sec034.json";
+
+const section = content.outdoorLightingProcess;
+---
+
+<section class="bg-[#f5f5f5] py-5 lg:py-8">
+
+  <div class="mx-auto w-[86%] max-w-[1120px]">
+
+    <!-- TOP CONTENT -->
+    <div class="mx-auto max-w-[860px] text-center">
+
+      <!-- HEADING -->
+      <h2
+        class="text-[16px] leading-[1.08] tracking-[-1px] text-[#111827] lg:text-[46px]"
+      >
+        {section.heading}
+      </h2>
+
+      <!-- DESCRIPTION -->
+      <p
+        class="mx-auto mt-5 max-w-[700px] text-[16px] leading-[1.7] text-[#374151] lg:text-[16px]"
+      >
+        {section.description}
+      </p>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div
+      class="mt-13 grid items-start gap-6 lg:grid-cols-[0.9fr_0.78fr]"
+    >
+
+      <!-- LEFT SIDE -->
+      <div class="space-y-5">
+
+        {
+          section.steps.map((item) => (
+
+            <div>
+
+              <!-- TITLE -->
+              <h3
+                class="text-[22px] font-semibold leading-[1.2] text-[#111827]"
+              >
+                {item.title}
+              </h3>
+
+              <!-- TEXT -->
+              <p
+                class="mt-2 max-w-[610px] text-[14px] leading-[1.7] text-[#374151] lg:text-[15px]"
+              >
+                {item.description}
+              </p>
+
+            </div>
+
+          ))
+        }
+
+      </div>
+
+      <!-- RIGHT SIDE IMAGES -->
+      <div class="grid grid-cols-2 gap-2">
+
+        {
+          section.images.map((image) => (
+
+            <div class="overflow-hidden rounded-[5px]">
+
+              <img
+                src={image}
+                alt="Outdoor Lighting"
+                class="h-[200px] w-full object-cover"
+              />
+
+            </div>
+
+          ))
+        }
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

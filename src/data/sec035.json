@@ -1,0 +1,101 @@
+
+
+{
+  "footer": {
+
+    "brand": "Outdoor Lighting Wilmington",
+
+    "description": "Transform your outdoor spaces with elegant lighting solutions designed for beauty, safety, and long-lasting coastal performance.",
+
+    "phone": "(910) 218-9037",
+
+    "email": "contact@outdoorlightingwilmington.com",
+
+    "address": "305 Raleigh St # E Wilmington, NC 28412",
+
+    "disclaimer": "Outdoor Lighting Wilmington is a free service connecting homeowners with trusted outdoor lighting professionals. All contractors are independently operated.",
+
+    "socials": [
+
+      {
+        "icon": "𝕏",
+        "link": "#"
+      },
+
+      {
+        "icon": "f",
+        "link": "#"
+      },
+
+      {
+        "icon": "◎",
+        "link": "#"
+      },
+
+      {
+        "icon": "▶",
+        "link": "#"
+      }
+
+    ],
+
+    "services": [
+
+      {
+        "name": "Landscape Lighting",
+        "link": "#"
+      },
+
+      {
+        "name": "Deck & Patio Lighting",
+        "link": "#"
+      },
+
+      {
+        "name": "Architectural Lighting",
+        "link": "#"
+      },
+
+      {
+        "name": "Outdoor Security Lighting",
+        "link": "#"
+      },
+
+      {
+        "name": "Holiday Lighting",
+        "link": "#"
+      }
+
+    ],
+
+    "links": [
+
+      {
+        "name": "Home",
+        "link": "#"
+      },
+
+      {
+        "name": "About Us",
+        "link": "#"
+      },
+
+      {
+        "name": "Services",
+        "link": "#"
+      },
+
+      {
+        "name": "Contact",
+        "link": "#"
+      },
+
+      {
+        "name": "Privacy Policy",
+        "link": "#"
+      }
+
+    ]
+
+  }
+}

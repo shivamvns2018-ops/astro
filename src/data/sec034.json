@@ -1,0 +1,49 @@
+{
+  "outdoorLightingProcess": {
+
+    "heading": "Our Outdoor Lighting Installation Process",
+
+    "description": "Our partners make getting new lights easy and stress-free for you. We follow a simple step-by-step plan to ensure you love the result.",
+
+    "steps": [
+
+      {
+        "title": "Design Consultation",
+
+        "description": "We meet with you to walk the property and hear your ideas. Our partners look at the Landfall or Historic District style of your home."
+      },
+
+      {
+        "title": "Custom Proposal",
+
+        "description": "You get a clear plan that shows exactly where lights will go. We explain the costs and the materials we will use upfront."
+      },
+
+      {
+        "title": "Professional Installation",
+
+        "description": "Our expert partners install the wires and fixtures with care for your lawn. We bury lines deep so they don’t get cut by lawnmowers."
+      },
+
+      {
+        "title": "Nighttime Adjustment",
+
+        "description": "We come back after dark to aim every light perfectly. This ensures the shadows and highlights fall exactly where they should."
+      }
+
+    ],
+
+    "images": [
+
+      "https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1400&auto=format&fit=crop",
+
+      "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1400&auto=format&fit=crop",
+
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=1400&auto=format&fit=crop",
+
+      "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1400&auto=format&fit=crop"
+
+    ]
+
+  }
+}
