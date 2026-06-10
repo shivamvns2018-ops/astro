@@ -1,0 +1,126 @@
+---
+import content from "../data/sec036.json";
+
+const section = content.heroSection;
+---
+
+<section
+  class="relative overflow-hidden bg-cover bg-center"
+  style={`background-image:url(${section.backgroundImage})`}
+>
+  <!-- Premium Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-[#5d0000]/95 via-[#7a0000]/85 to-[#5d0000]/55"></div>
+
+  <div class="relative z-10">
+
+    <!-- TOP BAR -->
+    <div class="border-b border-white/10 bg-[#8b0000] text-white">
+      <div class="mx-auto flex max-w-[1400px] items-center justify-between px-4 py-2 text-[12px] lg:px-4">
+
+        <p class="hidden md:block">
+          We Service: {section.topBar.serviceAreas.join(" • ")}
+        </p>
+
+        <p class="font-semibold">
+          {section.topBar.emergencyText}: {section.topBar.phone}
+        </p>
+
+      </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <div class="bg-[#9b0000]/95 backdrop-blur-sm">
+      <div class="mx-auto flex max-w-[1400px] items-center justify-between px-4 py-4 lg:px-4">
+
+        <div>
+          <h3 class="text-xl font-extrabold text-white">
+            {section.navbar.logo.title}
+          </h3>
+
+          <p class="text-xs text-white/80">
+            {section.navbar.logo.subtitle}
+          </p>
+        </div>
+
+        <nav class="hidden items-center gap-7 text-[16px] font-medium text-white lg:flex">
+          {section.navbar.menu.map((item) => (
+            <a
+              href="#"
+              class="transition duration-300 hover:text-yellow-400"
+            >
+              {item}
+            </a>
+          ))}
+        </nav>
+
+        <a
+          href={`tel:${section.navbar.phone}`}
+          class="rounded-full bg-white px-5 py-2.5 text-sm font-bold text-[#9b0000] shadow-lg transition hover:scale-105"
+        >
+          {section.navbar.phone}
+        </a>
+
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <div class="mx-auto max-w-[1400px] px-4 py-10 lg:px-6 lg:py-14">
+
+      <div class="max-w-[650px]">
+
+        <!-- Badge -->
+        <div class="inline-flex items-center rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm text-white backdrop-blur-md">
+          ● {section.badge}
+        </div>
+
+        <!-- Heading -->
+        <h1 class="mt-5 text-4xl font-black leading-[1.05] text-white lg:text-6xl">
+
+          {section.heading.line1}
+
+          <span class="mt-1 block text-yellow-400">
+            {section.heading.line2}
+          </span>
+
+        </h1>
+
+        <!-- Description -->
+        <p class="mt-5 max-w-[620px] text-[17px] leading-relaxed text-white/90 lg:text-[20px]">
+          {section.description}
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-7 flex flex-wrap gap-4">
+
+          {section.buttons.map((btn) => (
+            <a
+              href={btn.link}
+              class={`rounded-lg px-7 py-3 font-bold transition-all duration-300 ${
+                btn.variant === "primary"
+                  ? "bg-red-600 text-white shadow-xl hover:bg-red-700 hover:scale-105"
+                  : "border border-white text-white hover:bg-white hover:text-[#9b0000]"
+              }`}
+            >
+              {btn.text}
+            </a>
+          ))}
+
+        </div>
+
+        <!-- Features -->
+        <div class="mt-7 flex flex-wrap gap-3">
+
+          {section.features.map((item) => (
+            <div class="rounded-full border border-white/20 bg-white/10 px-4 py-2 text-sm font-medium text-white backdrop-blur-md">
+              {item}
+            </div>
+          ))}
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>

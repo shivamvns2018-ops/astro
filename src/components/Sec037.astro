@@ -1,0 +1,93 @@
+---
+// src/components/sections/HowWeWorkSection.astro
+
+import content from "../data/sec037.json";
+
+const section = content.howWeWork;
+---
+
+<section class="bg-[#f5f7fa] py-8 lg:py-14">
+
+  <div
+    class="mx-auto grid w-[88%] max-w-[1180px] items-center gap-8 lg:grid-cols-2"
+  >
+
+    <!-- IMAGE -->
+    <div>
+
+      <div class="overflow-hidden rounded-[18px] shadow-md">
+
+        <img
+          src={section.image}
+          alt={section.heading}
+          class="h-[320px] w-full object-cover lg:h-[430px]"
+        />
+
+      </div>
+
+    </div>
+
+    <!-- CONTENT -->
+    <div>
+
+      <!-- TAG -->
+      <p
+        class="text-[12px] font-bold uppercase tracking-[3px] text-[#ea580c]"
+      >
+        {section.tag}
+      </p>
+
+      <!-- HEADING -->
+      <h2
+        class="mt-3 max-w-[560px] text-[28px] font-bold leading-[1.15] text-[#0f172a] lg:text-[44px]"
+      >
+        {section.heading}
+      </h2>
+
+      <!-- DESCRIPTION -->
+      <p
+        class="mt-5 max-w-[560px] text-[15px] leading-[1.8] text-slate-600"
+      >
+        {section.description}
+      </p>
+
+      <!-- FEATURES -->
+      <div class="mt-6 space-y-4">
+
+        {
+          section.features.map((item) => (
+
+            <div class="flex items-start gap-3">
+
+              <div
+                class="flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#ea580c] text-[11px] font-bold text-white"
+              >
+                ✓
+              </div>
+
+              <p
+                class="text-[16px] leading-[1.6] text-slate-800"
+              >
+                {item}
+              </p>
+
+            </div>
+
+          ))
+        }
+
+      </div>
+
+      <!-- BUTTON -->
+      <a
+        href={section.buttonLink}
+        class="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#ea580c] px-6 py-3 text-[16px] font-semibold text-white transition duration-300 hover:bg-[#c2410c]"
+      >
+        📞 {section.buttonText}
+      </a>
+
+    </div>
+
+  </div>
+
+</section>

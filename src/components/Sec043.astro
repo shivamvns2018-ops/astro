@@ -1,0 +1,243 @@
+---
+// src/components/sections/FooterSection.astro
+
+import content from "../data/sec043.json";
+
+const section = content.footerSection;
+---
+
+<footer class="overflow-hidden">
+
+  <!-- TOP CTA -->
+  <div class="bg-[#e30609] py-4 lg:py-5">
+
+    <div class="mx-auto flex w-[92%] max-w-[1300px] flex-wrap items-center justify-center gap-4">
+
+      <h2
+        class="text-center text-[20px] font-extrabold uppercase tracking-wide text-white lg:text-[30px]"
+      >
+        {section.ctaText}
+      </h2>
+
+      <a
+        href={section.ctaButtonLink}
+        class="inline-flex items-center gap-3 rounded-xl bg-[#0b57a5] px-6 py-3 text-[15px] font-bold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-[#08498c]"
+      >
+        📞 {section.ctaButtonText}
+      </a>
+
+    </div>
+
+  </div>
+
+  <!-- MAIN FOOTER -->
+  <div class="bg-[#0b57a5]">
+
+    <div
+      class="mx-auto grid w-[92%] max-w-[1300px] gap-10 py-12 md:grid-cols-2 lg:grid-cols-5"
+    >
+
+      <!-- COMPANY -->
+      <div>
+
+        <h3
+          class="text-[22px] font-extrabold uppercase tracking-wide text-white"
+        >
+          {section.company.name}
+        </h3>
+
+        <p
+          class="mt-4 text-[15px] leading-[1.8] text-white/80"
+        >
+          {section.company.description}
+        </p>
+
+        <div
+          class="mt-6 space-y-3 text-[15px] text-white/90"
+        >
+
+          <p class="flex items-center gap-2">
+            📞 {section.company.phone}
+          </p>
+
+          <p class="flex items-center gap-2">
+            ✉️ {section.company.email}
+          </p>
+
+          <p class="flex items-center gap-2">
+            📍 {section.company.location}
+          </p>
+
+        </div>
+
+      </div>
+
+      <!-- SERVICES -->
+      <div>
+
+        <h4
+          class="text-[18px] font-bold uppercase tracking-wide text-white"
+        >
+          Services
+        </h4>
+
+        <div class="mt-5 space-y-3">
+
+          {
+            section.services.map((item) => (
+              <a
+                href={item.link}
+                class="block text-[15px] text-white/75 transition-all duration-300 hover:translate-x-1 hover:text-white"
+              >
+                {item.name}
+              </a>
+            ))
+          }
+
+        </div>
+
+      </div>
+
+      <!-- SERVICE AREAS -->
+      <div>
+
+        <h4
+          class="text-[18px] font-bold uppercase tracking-wide text-white"
+        >
+          Service Areas
+        </h4>
+
+        <div class="mt-5 space-y-3">
+
+          {
+            section.serviceAreas.map((item) => (
+              <a
+                href={item.link}
+                class="block text-[15px] text-white/75 transition-all duration-300 hover:translate-x-1 hover:text-white"
+              >
+                {item.name}
+              </a>
+            ))
+          }
+
+        </div>
+
+      </div>
+
+      <!-- RESOURCES -->
+      <div>
+
+        <h4
+          class="text-[18px] font-bold uppercase tracking-wide text-white"
+        >
+          Resources
+        </h4>
+
+        <div class="mt-5 space-y-3">
+
+          {
+            section.resources.map((item) => (
+              <a
+                href={item.link}
+                class="block text-[15px] text-white/75 transition-all duration-300 hover:translate-x-1 hover:text-white"
+              >
+                {item.name}
+              </a>
+            ))
+          }
+
+        </div>
+
+      </div>
+
+      <!-- COMPANY LINKS -->
+      <div>
+
+        <h4
+          class="text-[18px] font-bold uppercase tracking-wide text-white"
+        >
+          Company
+        </h4>
+
+        <div class="mt-5 space-y-3">
+
+          {
+            section.companyLinks.map((item) => (
+              <a
+                href={item.link}
+                class="block text-[15px] text-white/75 transition-all duration-300 hover:translate-x-1 hover:text-white"
+              >
+                {item.name}
+              </a>
+            ))
+          }
+
+        </div>
+
+        <!-- SOCIAL ICONS -->
+        <div class="mt-7 flex gap-3">
+
+          <a
+            href={section.socialLinks.linkedin}
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#0b57a5]"
+          >
+            💼
+          </a>
+
+          <a
+            href={section.socialLinks.twitter}
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#0b57a5]"
+          >
+            ✕
+          </a>
+
+          <a
+            href={section.socialLinks.facebook}
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:text-[#0b57a5]"
+          >
+            📘
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="border-t border-white/10">
+
+      <div
+        class="mx-auto flex w-[92%] max-w-[1300px] flex-col items-center justify-between gap-4 py-5 text-center lg:flex-row"
+      >
+
+        <p
+          class="text-[14px] text-white/60"
+        >
+          {section.copyright}
+        </p>
+
+        <div
+          class="flex flex-wrap justify-center gap-5"
+        >
+
+          {
+            section.legalLinks.map((item) => (
+              <a
+                href={item.link}
+                class="text-[14px] text-white/60 transition hover:text-white"
+              >
+                {item.name}
+              </a>
+            ))
+          }
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>

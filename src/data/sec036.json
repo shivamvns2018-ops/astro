@@ -1,0 +1,70 @@
+{
+  "heroSection": {
+    "topBar": {
+      "serviceAreas": [
+        "Dallas",
+        "Plano",
+        "Frisco",
+        "Richardson",
+        "Garland",
+        "Irving",
+        "Arlington",
+        "McKinney",
+        "Allen",
+        "Carrollton",
+        "Mesquite",
+        "Grand Prairie"
+      ],
+      "emergencyText": "24/7 Emergency",
+      "phone": "(833) 984-1928"
+    },
+
+    "navbar": {
+      "logo": {
+        "title": "DFW Garage Door",
+        "subtitle": "Repair & Installation"
+      },
+      "menu": [
+        "Services",
+        "Home",
+        "Emergency",
+        "Blog",
+        "Cost Guide",
+        "Locations",
+        "Company"
+      ],
+      "phone": "(833) 984-1928"
+    },
+
+    "badge": "Available 24/7 — Same Day Service in Dallas, TX",
+
+    "heading": {
+      "line1": "Garage Door Repair",
+      "line2": "Dallas TX — Same-Day Service"
+    },
+
+    "description": "Broken spring, off-track door, or opener failure? Our TDLR-licensed technicians fix it same-day — 24/7 emergency response across Dallas & all DFW cities. Upfront pricing from $75.",
+
+    "buttons": [
+      {
+        "text": "CALL NOW: (833) 984-1928",
+        "link": "tel:+18339841928",
+        "variant": "primary"
+      },
+      {
+        "text": "SCHEDULE ONLINE",
+        "link": "#",
+        "variant": "secondary"
+      }
+    ],
+
+    "features": [
+      "Licensed & Insured",
+      "24/7 Emergency",
+      "5-Star Rated",
+      "Same-Day Service"
+    ],
+
+    "backgroundImage": "https://i.pinimg.com/736x/78/e1/5f/78e15f4890235d5dcd9cda84d7f0490c.jpg"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "howWeWork": {
+    "tag": "HOW WE WORK",
+
+    "heading": "A Real Person Answers. A Licensed Plumber Is Dispatched.",
+
+    "description": "When a supply line fails at midnight or a sewer backs up on a holiday weekend, you call (971) 293-4200 and a live dispatcher picks up — not voicemail, not an answering service. We find the nearest available licensed plumber, provide their name and ETA, and ensure they contact you on the way.",
+
+    "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?q=80&w=1200&auto=format&fit=crop",
+
+    "features": [
+      "Live answer 24/7 — no hold queue, no call-back promise",
+      "Licensed plumber dispatched immediately",
+      "Plumber's name and ETA before arrival",
+      "Permits pulled on jobs that require them",
+      "Serving residential and commercial properties"
+    ],
+
+    "buttonText": "Call +1 (971) 293-4200",
+
+    "buttonLink": "tel:+19712934200"
+  }
+}

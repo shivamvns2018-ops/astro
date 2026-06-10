@@ -1,0 +1,103 @@
+---
+// src/components/sections/WhyChooseUsImageSection.astro
+
+import content from "../data/sec041.json";
+
+const section = content.whyChooseUs;
+---
+
+<section class="bg-[#f8fafc] py-10 lg:py-14">
+
+  <div class="mx-auto w-[92%] max-w-[1280px]">
+
+    <!-- Header -->
+    <div class="mx-auto max-w-[990px] text-center">
+
+      <p
+        class="inline-flex items-center gap-2 rounded-full bg-[#37d5c2]/10 px-4 py-2 text-[16px]  uppercase tracking-[3px] text-[#37d5c2]"
+      >
+        ✦ {section.tag}
+      </p>
+
+      <h2
+        class="mt-3 text-[16px]  leading-tight text-[#07132d] lg:text-[52px]"
+      >
+        {section.heading}
+      </h2>
+
+      <p
+        class="mx-auto mt-2 max-w-[700px] text-[16px] leading-[1.8] text-slate-600"
+      >
+        {section.description}
+      </p>
+
+    </div>
+
+    <!-- Content -->
+    <div
+      class="mt-10 grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr]"
+    >
+
+      <!-- Left Side -->
+      <div class="space-y-4">
+
+        {
+          section.features.map((item) => (
+
+            <div
+              class="group flex gap-4 rounded-[22px] border border-slate-200 bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#37d5c2] hover:shadow-[0_15px_40px_rgba(55,213,194,0.15)]"
+            >
+
+              <!-- Icon -->
+              <div
+                class="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#37d5c2] to-[#24b8a7] text-[24px] text-white shadow-lg"
+              >
+                {item.icon}
+              </div>
+
+              <!-- Content -->
+              <div>
+
+                <h3
+                  class="text-[22px] font-bold text-[#07132d]"
+                >
+                  {item.title}
+                </h3>
+
+                <p
+                  class="mt-2 text-[16px] leading-[1.75] text-slate-600"
+                >
+                  {item.description}
+                </p>
+
+              </div>
+
+            </div>
+
+          ))
+        }
+
+      </div>
+
+      <!-- Right Image -->
+      <div>
+
+        <div
+          class="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-[0_20px_50px_rgba(0,0,0,0.08)]"
+        >
+
+          <img
+            src={section.image}
+            alt={section.heading}
+            class="h-[320px] w-full object-cover transition duration-700 hover:scale-105 lg:h-[420px]"
+          />
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

@@ -1,0 +1,25 @@
+{
+  "whyChooseUs": {
+    "tag": "THREE THINGS WE DO BETTER",
+
+    "heading": "Most dumpster companies charge flat fees. We don't touch the scale — it weighs up.",
+
+    "cards": [
+      {
+        "icon": "💲",
+        "title": "FLAT-RATE PROMISE",
+        "description": "What we quote is what you pay. Period. No fuel surcharges, no environmental fees, no admin charges. Our competitors love hidden fees — we hate them."
+      },
+      {
+        "icon": "🏠",
+        "title": "LA & OC ROOTS",
+        "description": "Every route is optimized. Every neighborhood, every construction site, every tight driveway — we know LA and Orange County like the back of our hand."
+      },
+      {
+        "icon": "📞",
+        "title": "OWNER-ANSWERED",
+        "description": "Call us right now. No call center, no voicemail. The same person coordinates your delivery, answers questions, and stands by their work every time."
+      }
+    ]
+  }
+}

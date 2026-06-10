@@ -1,0 +1,64 @@
+{
+  "serviceAreas": {
+    "tag": "📍 NATIONWIDE UK COVERAGE",
+
+    "heading": "Cities & Areas We Serve",
+
+    "description": "From central London to Edinburgh and Glasgow — our qualified engineers cover the entire United Kingdom with same-day availability.",
+
+    "locations": [
+      {
+        "name": "London",
+        "link": "/locations/london"
+      },
+      {
+        "name": "Manchester",
+        "link": "/locations/manchester"
+      },
+      {
+        "name": "Birmingham",
+        "link": "/locations/birmingham"
+      },
+      {
+        "name": "Leeds",
+        "link": "/locations/leeds"
+      },
+      {
+        "name": "Sheffield",
+        "link": "/locations/sheffield"
+      },
+      {
+        "name": "Liverpool",
+        "link": "/locations/liverpool"
+      },
+      {
+        "name": "Bristol",
+        "link": "/locations/bristol"
+      },
+      {
+        "name": "Nottingham",
+        "link": "/locations/nottingham"
+      },
+      {
+        "name": "Leicester",
+        "link": "/locations/leicester"
+      },
+      {
+        "name": "Coventry",
+        "link": "/locations/coventry"
+      },
+      {
+        "name": "Edinburgh",
+        "link": "/locations/edinburgh"
+      },
+      {
+        "name": "Glasgow",
+        "link": "/locations/glasgow"
+      }
+    ],
+
+    "bottomText": "Don't see your area?",
+
+    "bottomHighlight": "Ring 0800 123 4567 — chances are we already cover your area."
+  }
+}

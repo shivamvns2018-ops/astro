@@ -1,0 +1,28 @@
+{
+  "statsSection": {
+    "backgroundColor": "#ff6b00",
+
+    "stats": [
+      {
+        "number": "10",
+        "suffix": "",
+        "label": "YEARS IN BUSINESS"
+      },
+      {
+        "number": "$0",
+        "suffix": "",
+        "label": "HIDDEN FEES — EVER"
+      },
+      {
+        "number": "50",
+        "suffix": "+",
+        "label": "CITIES SERVED"
+      },
+      {
+        "number": "24",
+        "suffix": "H",
+        "label": "SAME-DAY DELIVERY"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "footerSection": {
+    "ctaText": "SCHEDULE AN APPOINTMENT",
+    "ctaButtonText": "CALL US NOW!",
+    "ctaButtonLink": "tel:+18773867023",
+
+    "company": {
+      "name": "FASTER GARAGE DOOR REPAIR",
+      "description": "Licensed, insured garage door repair & installation serving 36+ cities across Texas. Available 24/7 with no emergency surcharges.",
+      "phone": "(877) 386-7023",
+      "email": "zahir@theromanseo.com",
+      "location": "Serving 36+ Texas Cities"
+    },
+
+    "services": [
+      { "name": "Spring Repair", "link": "#" },
+      { "name": "Opener Repair", "link": "#" },
+      { "name": "Cable Repair", "link": "#" },
+      { "name": "New Installation", "link": "#" },
+      { "name": "Track Repair", "link": "#" },
+      { "name": "Sensor Repair", "link": "#" },
+      { "name": "Emergency 24/7", "link": "#" },
+      { "name": "All Services", "link": "#" }
+    ],
+
+    "serviceAreas": [
+      { "name": "Dallas", "link": "#" },
+      { "name": "Houston", "link": "#" },
+      { "name": "Austin", "link": "#" },
+      { "name": "San Antonio", "link": "#" },
+      { "name": "Fort Worth", "link": "#" },
+      { "name": "Plano", "link": "#" },
+      { "name": "Frisco", "link": "#" },
+      { "name": "Arlington", "link": "#" },
+      { "name": "All Areas", "link": "#" }
+    ],
+
+    "resources": [
+      { "name": "Blog & Guides", "link": "#" },
+      { "name": "Repair Cost Guide", "link": "#" },
+      { "name": "Maintenance Tips", "link": "#" },
+      { "name": "Repair vs Replace", "link": "#" },
+      { "name": "Opener Buying Guide", "link": "#" }
+    ],
+
+    "companyLinks": [
+      { "name": "Home", "link": "/" },
+      { "name": "About Us", "link": "/about" },
+      { "name": "Contact Us", "link": "/contact" },
+      { "name": "Sitemap", "link": "/sitemap" }
+    ],
+
+    "socialLinks": {
+      "linkedin": "#",
+      "twitter": "#",
+      "facebook": "#"
+    },
+
+    "copyright": "© 2026 Faster Garage Door Repair. All rights reserved.",
+
+    "legalLinks": [
+      {
+        "name": "Privacy Policy",
+        "link": "/privacy-policy"
+      },
+      {
+        "name": "Terms & Conditions",
+        "link": "/terms"
+      },
+      {
+        "name": "Disclaimer",
+        "link": "/disclaimer"
+      },
+      {
+        "name": "Cookie Policy",
+        "link": "/cookies"
+      }
+    ]
+  }
+}

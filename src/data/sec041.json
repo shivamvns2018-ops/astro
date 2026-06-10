@@ -1,0 +1,26 @@
+{
+  "whyChooseUs": {
+    "tag": "WHY CHOOSE US",
+    "heading": "Why Choose Fairfax Water Damage Pros",
+    "description": "Discover why homeowners trust Fairfax Water Damage Pros for all their water damage restoration needs in Fairfax VA.",
+    "image": "https://i.pinimg.com/736x/ab/1e/c2/ab1ec288d33db61072a2e3386d320ff7.jpg",
+
+    "features": [
+      {
+        "icon": "🛡️",
+        "title": "24/7 Emergency Response",
+        "description": "We arrive within the hour, any time, day or night, to start water extraction immediately."
+      },
+      {
+        "icon": "🛠️",
+        "title": "Certified & Insured",
+        "description": "IICRC pros with full insurance coverage for ultimate protection."
+      },
+      {
+        "icon": "⚙️",
+        "title": "Advanced Equipment",
+        "description": "Truck-mounted extractors, thermal cameras, and commercial dehumidifiers for superior results."
+      }
+    ]
+  }
+}
