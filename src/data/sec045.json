@@ -1,0 +1,53 @@
+{
+  "modernInteriorHero": {
+    "logo": {
+      "text": "Purplemedia.store",
+      "link": "/"
+    },
+
+    "navigation": [
+      { "name": "Home", "link": "#" },
+      { "name": "About Us", "link": "#" },
+      { "name": "Services", "link": "#" },
+      { "name": "Testimonials", "link": "#" },
+      { "name": "Pricing", "link": "#" }
+    ],
+
+    "cta": {
+      "label": "Request a Quote",
+      "link": "#"
+    },
+
+    "badge": "Future Design Ideas",
+
+    "heading": "Modern Interior Design",
+
+    "description": "Rooted in Scandinavian design principles, our collection blends minimalism with functionality, bringing warmth and serenity into every corner of your home. The concept of \"Future Design\" avoids this reliance on younger people and is designed for adults of all ages. Although we haven yet solved time travel, Future Design allows us to imagine ourselves in the future - while maintaining our current age and experience and helps us to think .",
+
+    "stats": [
+      {
+        "number": "10000+",
+        "label": "Happy Homeowners"
+      },
+      {
+        "number": "700+",
+        "label": "Unique Styles"
+      },
+      {
+        "number": "10+",
+        "label": "Certified Outlets"
+      }
+    ],
+
+    "primaryButton": {
+      "label": "Contact",
+      "link": "#"
+    },
+
+    "images": {
+      "main": "https://i.pinimg.com/736x/ee/24/58/ee2458b77048e3afa9da1f1bbc663038.jpg",
+      "lamp": "https://i.pinimg.com/736x/cb/f5/92/cbf592897608d8801f7990e54ddd62f3.jpg",
+      "chair": "https://i.pinimg.com/1200x/97/03/5c/97035cb4572cc20e81e0da9aedbeee20.jpg"
+    }
+  }
+}
