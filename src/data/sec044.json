@@ -1,0 +1,23 @@
+{
+  "navbar": {
+    "logo": "purplemedia.store",
+    "menu": [
+      {
+        "label": "Home",
+        "link": "/"
+      },
+      {
+        "label": "Services",
+        "link": "/services"
+      },
+      {
+        "label": "About",
+        "link": "/about"
+      },
+      {
+        "label": "Contact",
+        "link": "/contact"
+      }
+    ]
+  }
+}

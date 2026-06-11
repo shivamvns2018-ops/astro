@@ -150,18 +150,24 @@ const section = content.designerSection;
 </style>
 
 <script>
-  const slider = document.getElementById("designerSlider");
+  (function () {
+    const slider = document.getElementById("designerSlider");
+    if (!slider) return;
 
-  let isDown: boolean = false;
-  let startX: number = 0;
-  let scrollLeft: number = 0;
+    // Duplicate content for seamless looping
+    slider.innerHTML = slider.innerHTML + slider.innerHTML;
 
-  if (slider) {
-    slider.addEventListener("mousedown", (e: MouseEvent) => {
+    let isDown = false;
+    let startX = 0;
+    let scrollLeft = 0;
+    let auto = true;
+    const speed = 0.6; // pixels per frame, adjust to taste
+
+    // Mouse drag
+    slider.addEventListener("mousedown", (e) => {
       isDown = true;
-
+      auto = false;
       slider.classList.add("dragging");
-
       startX = e.pageX - slider.offsetLeft;
       scrollLeft = slider.scrollLeft;
     });
@@ -174,17 +180,50 @@ const section = content.designerSection;
     slider.addEventListener("mouseup", () => {
       isDown = false;
       slider.classList.remove("dragging");
+      setTimeout(() => (auto = true), 800);
     });
 
-    slider.addEventListener("mousemove", (e: MouseEvent) => {
+    slider.addEventListener("mousemove", (e) => {
       if (!isDown) return;
-
       e.preventDefault();
-
       const x = e.pageX - slider.offsetLeft;
       const walk = (x - startX) * 2;
-
       slider.scrollLeft = scrollLeft - walk;
     });
-  }
+
+    // Touch drag
+    slider.addEventListener("touchstart", (e) => {
+      auto = false;
+      startX = e.touches[0].pageX - slider.offsetLeft;
+      scrollLeft = slider.scrollLeft;
+    });
+
+    slider.addEventListener("touchend", () => {
+      setTimeout(() => (auto = true), 800);
+    });
+
+    slider.addEventListener("touchmove", (e) => {
+      const x = e.touches[0].pageX - slider.offsetLeft;
+      const walk = (x - startX) * 2;
+      slider.scrollLeft = scrollLeft - walk;
+    });
+
+    // Pause on hover
+    slider.addEventListener("mouseenter", () => (auto = false));
+    slider.addEventListener("mouseleave", () => (auto = true));
+
+    // Auto-scroll loop
+    function step() {
+      if (auto) {
+        slider.scrollLeft += speed;
+        // When we've scrolled past the first copy, jump back by half width
+        if (slider.scrollLeft >= slider.scrollWidth / 2) {
+          slider.scrollLeft -= slider.scrollWidth / 2;
+        }
+      }
+      requestAnimationFrame(step);
+    }
+
+    requestAnimationFrame(step);
+  })();
 </script>

@@ -1,0 +1,58 @@
+---
+// src/components/sections/NavbarSection.astro
+
+import content from "../data/sec044.json";
+
+const section = content.navbar;
+---
+
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+
+  <div
+    class="mx-auto flex h-[80px] w-[92%] max-w-[1400px] items-center justify-between"
+  >
+
+    <!-- LOGO -->
+    <a
+      href="/"
+      class="text-[32px] font-extrabold tracking-tight text-[#07132d]"
+    >
+      {section.logo}
+    </a>
+
+    <!-- MENU -->
+    <nav class="hidden items-center gap-10 lg:flex">
+
+      {
+        section.menu.map((item) => (
+
+          <a
+            href={item.link}
+            class="text-[17px] font-semibold text-slate-700 transition duration-300 hover:text-[#7c3aed]"
+          >
+            {item.label}
+          </a>
+
+        ))
+      }
+
+    </nav>
+
+    <!-- CTA BUTTON -->
+    <a
+      href="/contact"
+      class="hidden rounded-xl bg-[#7c3aed] px-6 py-3 text-[15px] font-semibold text-white transition hover:bg-[#6d28d9] lg:inline-flex"
+    >
+      Get Started
+    </a>
+
+    <!-- MOBILE MENU -->
+    <button
+      class="text-[28px] text-slate-800 lg:hidden"
+    >
+      ☰
+    </button>
+
+  </div>
+
+</header>
