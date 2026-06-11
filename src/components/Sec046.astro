@@ -1,0 +1,84 @@
+---
+// src/components/sections/ConsultationBar.astro
+
+import content from "../data/sec046.json";
+
+const section = content.consultationBar;
+---
+
+<section class="relative overflow-hidden bg-[#241915] py-5">
+
+  <!-- Gradient Overlay -->
+  <div
+    class="absolute inset-0 bg-gradient-to-r from-[#241915] via-[#2e211b] to-[#241915]"
+  ></div>
+
+  <div
+    class="relative z-10 mx-auto flex w-[92%] max-w-[1450px] flex-wrap items-center justify-between gap-6"
+  >
+
+    <!-- LEFT HELP -->
+    <div class="flex items-center gap-5">
+
+      <div
+        class="flex h-14 w-14 items-center justify-center rounded-xl border border-[#b96f37]/40 text-[24px] text-[#c9793f]"
+      >
+        {section.help.icon}
+      </div>
+
+      <div>
+
+        <p class="text-[14px] text-white/70">
+          {section.help.title}
+        </p>
+
+        <h3 class="text-[24px] font-semibold text-white">
+          {section.help.subtitle}
+        </h3>
+
+      </div>
+
+    </div>
+
+    <!-- STATS -->
+    <div
+      class="flex flex-wrap items-center justify-center gap-10 lg:gap-16"
+    >
+
+      {
+        section.stats.map((item) => (
+
+          <div
+            class="border-l border-white/10 pl-10 first:border-l-0 first:pl-0 text-center"
+          >
+
+            <h3
+              class="text-[32px] font-bold text-[#c9793f]"
+            >
+              {item.number}
+            </h3>
+
+            <p
+              class="mt-1 text-[14px] text-white/70"
+            >
+              {item.label}
+            </p>
+
+          </div>
+
+        ))
+      }
+
+    </div>
+
+    <!-- BUTTON -->
+    <a
+      href={section.button.link}
+      class="rounded-xl bg-[#c9793f] px-8 py-4 text-[15px] font-semibold uppercase tracking-wide text-white transition duration-300 hover:bg-[#d98b4f]"
+    >
+      {section.button.text}
+    </a>
+
+  </div>
+
+</section>

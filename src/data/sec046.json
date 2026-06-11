@@ -1,0 +1,29 @@
+{
+  "consultationBar": {
+    "help": {
+      "icon": "🎧",
+      "title": "Have questions?",
+      "subtitle": "We're here to help!"
+    },
+
+    "stats": [
+      {
+        "number": "500+",
+        "label": "Projects Completed"
+      },
+      {
+        "number": "98%",
+        "label": "Client Satisfaction"
+      },
+      {
+        "number": "10+",
+        "label": "Years Experience"
+      }
+    ],
+
+    "button": {
+      "text": "BOOK YOUR FREE CONSULTATION",
+      "link": "#"
+    }
+  }
+}
