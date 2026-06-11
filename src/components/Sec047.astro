@@ -1,0 +1,65 @@
+---
+// src/components/sections/NavbarSection.astro
+
+import content from "../data/sec047.json";
+
+const section = content.navbar;
+---
+
+<header
+  class="sticky top-0 z-50 border-b border-white/10 bg-[#4b3a32]/95 backdrop-blur-md"
+>
+  <div
+    class="mx-auto flex h-[68px] w-[94%] max-w-[1500px] items-center justify-between"
+  >
+
+    <!-- LOGO -->
+    <a
+      href={section.logo.link}
+      class="group"
+    >
+      <h1
+        class="text-[34px] font-bold tracking-[-1.5px] text-white transition duration-300"
+      >
+        <span class="text-white">Purple</span>
+        <span class="text-[#d8b15a] group-hover:text-[#f0c76f]">
+          media
+        </span>
+        <span class="text-white">.store</span>
+      </h1>
+    </a>
+
+    <!-- DESKTOP MENU -->
+    <nav class="hidden items-center gap-12 lg:flex">
+
+      {
+        section.navigation.map((item) => (
+          <a
+            href={item.link}
+            class="relative text-[15px] font-medium text-white/90 transition duration-300 hover:text-[#d8b15a]"
+          >
+            {item.name}
+          </a>
+        ))
+      }
+
+      <!-- CTA -->
+      <a
+        href={section.cta.link}
+        class="rounded-2xl border border-white/20 px-8 py-3 text-[15px] font-medium text-white transition duration-300 hover:border-[#d8b15a] hover:bg-[#d8b15a] hover:text-[#3b2d28]"
+      >
+        {section.cta.label}
+      </a>
+
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <button
+      class="flex h-11 w-11 items-center justify-center rounded-xl border border-white/20 text-white lg:hidden"
+      aria-label="Menu"
+    >
+      ☰
+    </button>
+
+  </div>
+</header>

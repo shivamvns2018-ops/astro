@@ -6,86 +6,44 @@ import content from "../data/sec045.json";
 const section = content.modernInteriorHero;
 ---
 
-<section class="overflow-hidden bg-[#43352e] py- lg:py-1">
+<section class="overflow-hidden bg-[#43352e] py-8 lg:py-12">
 
   <div class="mx-auto w-[92%] max-w-[1350px]">
 
-    <!-- HEADER -->
-    <div class="flex items-center justify-between">
-
-      <!-- LOGO -->
-      <a
-  href={section.logo.link}
-  class="group flex items-center"
->
-  <span
-    class="text-[28px] font-bold tracking-[-1px] text-white transition duration-300 group-hover:text-[#d8b15a] lg:text-[34px]"
-  >
-    {section.logo.text}
-  </span>
-</a>
-
-      <!-- NAVIGATION -->
-      <div class="hidden items-center gap-6 lg:flex">
-
-        {
-          section.navigation.map((item) => (
-            <a
-              href={item.link}
-              class="text-[16px] text-white/85 transition duration-300 hover:text-[#d8b15a]"
-            >
-              {item.name}
-            </a>
-          ))
-        }
-
-        <a
-          href={section.cta.link}
-          class="rounded-xl border border-white/25 px-5 py-2.5 text-[14px] text-white transition duration-300 hover:bg-white hover:text-[#254d4e]"
-        >
-          {section.cta.label}
-        </a>
-
-      </div>
-
-    </div>
-
     <!-- HERO CONTENT -->
-    <div class="mt- grid items-center gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+    <div class="grid items-center gap-8 lg:grid-cols-[0.95fr_1.05fr]">
 
       <!-- LEFT -->
       <div>
 
         <!-- HEADING -->
         <h1
-          class="mt- max-w-[520px] text-[16px] font-semibold leading-[1.05] text-white lg:text-[62px]"
-          style="font-family: 'Cormorant Garamond', serif;"
+          class="max-w-[560px] text-[42px] font-semibold leading-[1.05] text-white lg:text-[72px]"
+          style="font-family:'Cormorant Garamond', serif;"
         >
           {section.heading}
         </h1>
 
         <!-- DESCRIPTION -->
         <p
-          class="mt-3 max-w-[520px] text-[16px] leading-[1.8] text-white/80 lg:text-[16px]"
+          class="mt-5 max-w-[540px] text-[16px] leading-[1.9] text-white/80 lg:text-[18px]"
         >
           {section.description}
         </p>
 
         <!-- STATS -->
-        <div class="mt-4 flex flex-wrap gap-6">
+        <div class="mt-8 flex flex-wrap gap-8">
 
           {
             section.stats.map((item) => (
               <div>
-
-                <h3 class="text-[28px] font-bold text-white lg:text-[32px]">
+                <h3 class="text-[30px] font-bold text-white lg:text-[36px]">
                   {item.number}
                 </h3>
 
-                <p class="mt-1 text-[12px] text-white/65">
+                <p class="mt-1 text-[13px] text-white/65">
                   {item.label}
                 </p>
-
               </div>
             ))
           }
@@ -93,11 +51,11 @@ const section = content.modernInteriorHero;
         </div>
 
         <!-- BUTTONS -->
-        <div class="mt-8 flex flex-wrap items-center gap-3">
+        <div class="mt-10 flex flex-wrap items-center gap-3">
 
           <a
             href={section.primaryButton.link}
-            class="flex items-center gap-2 rounded-xl bg-[#d8b15a] px-7 py-3 font-semibold text-[#1f2d2d] transition duration-300 hover:scale-105"
+            class="flex items-center gap-2 rounded-xl bg-[#d8b15a] px-8 py-3.5 font-semibold text-[#1f2d2d] transition duration-300 hover:scale-105"
           >
             {section.primaryButton.label}
             →
@@ -105,21 +63,21 @@ const section = content.modernInteriorHero;
 
           <a
             href={(section as any).secondaryButton?.link ?? '#'}
-            class="flex h-12 w-12 items-center justify-center rounded-xl border border-white/20 text-white transition duration-300 hover:bg-white hover:text-[#254d4e]"
+            class="flex h-12 w-12 items-center justify-center rounded-xl border border-white/20 text-white transition duration-300 hover:bg-white hover:text-[#43352e]"
           >
             ✦
           </a>
 
           <a
             href={(section as any).instagram?.link ?? '#'}
-            class="flex h-12 w-12 items-center justify-center rounded-xl border border-white/20 text-white transition duration-300 hover:bg-white hover:text-[#254d4e]"
+            class="flex h-12 w-12 items-center justify-center rounded-xl border border-white/20 text-white transition duration-300 hover:bg-white hover:text-[#43352e]"
           >
             ◎
           </a>
 
           <a
             href={(section as any).dribbble?.link ?? '#'}
-            class="flex h-12 w-12 items-center justify-center rounded-xl border border-white/20 text-white transition duration-300 hover:bg-white hover:text-[#254d4e]"
+            class="flex h-12 w-12 items-center justify-center rounded-xl border border-white/20 text-white transition duration-300 hover:bg-white hover:text-[#43352e]"
           >
             ◈
           </a>
@@ -128,37 +86,34 @@ const section = content.modernInteriorHero;
 
       </div>
 
-     <!-- RIGHT IMAGES -->
-<div class="grid grid-cols-[1.6fr_0.55fr_0.55fr] gap-3">
+      <!-- RIGHT IMAGES -->
+      <div class="grid grid-cols-[1.6fr_0.55fr_0.55fr] gap-4">
 
-  <!-- MAIN IMAGE -->
-  <div class="overflow-hidden rounded-[18px] shadow-xl">
-    <img
-      src={section.images.main}
-      alt="Interior Design"
-      class="h-[380px] w-full object-cover transition duration-700 hover:scale-105 lg:h-[520px]"
-    />
-  </div>
+        <div class="overflow-hidden rounded-[22px] shadow-2xl">
+          <img
+            src={section.images.main}
+            alt="Interior Design"
+            class="h-[400px] w-full object-cover transition duration-700 hover:scale-105 lg:h-[560px]"
+          />
+        </div>
 
-  <!-- LAMP -->
-  <div class="overflow-hidden rounded-[18px] shadow-xl">
-    <img
-      src={section.images.lamp}
-      alt="Lamp"
-      class="h-[380px] w-full object-cover transition duration-700 hover:scale-105 lg:h-[520px]"
-    />
-  </div>
+        <div class="overflow-hidden rounded-[22px] shadow-2xl">
+          <img
+            src={section.images.lamp}
+            alt="Lamp"
+            class="h-[400px] w-full object-cover transition duration-700 hover:scale-105 lg:h-[560px]"
+          />
+        </div>
 
-  <!-- CHAIR -->
-  <div class="overflow-hidden rounded-[18px] shadow-xl">
-    <img
-      src={section.images.chair}
-      alt="Chair"
-      class="h-[380px] w-full object-cover transition duration-700 hover:scale-105 lg:h-[520px]"
-    />
-  </div>
+        <div class="overflow-hidden rounded-[22px] shadow-2xl">
+          <img
+            src={section.images.chair}
+            alt="Chair"
+            class="h-[400px] w-full object-cover transition duration-700 hover:scale-105 lg:h-[560px]"
+          />
+        </div>
 
-</div>
+      </div>
 
     </div>
 
