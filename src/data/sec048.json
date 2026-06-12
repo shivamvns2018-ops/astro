@@ -1,0 +1,27 @@
+{
+  "aboutCompany": {
+    "headingFirst": "ABOUT",
+    "headingSecond": "COMPANY",
+
+    "items": [
+      {
+        "number": "45+",
+        "title": "DESIGN PROJECTS",
+        "description": "Project that cover all major commercial facilities, areas of house and apartments are willing to work with us. We are happy to provide best services of good quality.",
+        "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85"
+      },
+      {
+        "number": "20+",
+        "title": "EMPLOYEES",
+        "description": "We always ready to ensure your questions and serve you time with our experts and searching for better design solutions.",
+        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+      },
+      {
+        "number": "100+",
+        "title": "CONTRACTORS",
+        "description": "Guarantee one-time completion of assigned tasks, personal support and service regardless of labor rating at all stages.",
+        "image": "https://images.unsplash.com/photo-1521791136064-7986c2920216"
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+---
+import content from "../data/sec048.json";
+
+const section = content.aboutCompany;
+---
+
+<section class="bg-[#f4f4f4] py-8 lg:py-10">
+
+  <div class="mx-auto w-[95%] max-w-[1300px]">
+
+    <!-- Heading -->
+    <div class="mb-8">
+
+      <h2
+        class="text-[42px] leading-none text-black lg:text-[72px]"
+        style="font-family:'Cormorant Garamond', serif;"
+      >
+        {section.headingFirst}
+      </h2>
+
+      <h3
+        class="-mt-1 ml-16 text-[32px] leading-none text-[#5a4438] lg:text-[56px]"
+        style="font-family:'Cormorant Garamond', serif;"
+      >
+        {section.headingSecond}
+      </h3>
+
+    </div>
+
+    <!-- Content -->
+    <div class="space-y-5">
+
+      {
+        section.items.map((item) => (
+
+          <div
+            class="grid items-center gap-6 md:grid-cols-[280px_1fr]"
+          >
+
+            <!-- Image -->
+            <div class="overflow-hidden rounded-xl shadow-lg">
+
+              <img
+                src={item.image}
+                alt={item.title}
+                class="h-[140px] w-full object-cover transition duration-500 hover:scale-105"
+              />
+
+            </div>
+
+            <!-- Text -->
+            <div class="flex items-start gap-6">
+
+              <div class="max-w-[750px]">
+
+                <h3
+                  class="text-[42px] font-bold leading-none text-black"
+                >
+                  {item.number}
+                </h3>
+
+                <h4
+                  class="text-[20px] uppercase tracking-wide text-[#4e3b31]"
+                >
+                  {item.title}
+                </h4>
+
+                <p
+                  class="mt-2 text-[14px] leading-[1.7] text-[#6b7280]"
+                >
+                  {item.description}
+                </p>
+
+              </div>
+
+              <div
+                class="mt-6 hidden h-[1px] flex-1 bg-[#d6d6d6] md:block"
+              ></div>
+
+            </div>
+
+          </div>
+
+        ))
+      }
+
+    </div>
+
+  </div>
+
+</section>
