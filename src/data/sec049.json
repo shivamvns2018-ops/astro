@@ -1,0 +1,35 @@
+{
+  "aboutSection": {
+    "title": "About us",
+
+    "topCard": {
+      "image": "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200",
+      "subtitle": "We are the best.",
+      "heading": "Our story",
+
+      "description": "Our commitment for more than 26 years has been to create elegant interiors that combine comfort, functionality and timeless aesthetics. We believe every home should reflect personality and warmth.",
+
+      "button": {
+        "text": "Let's talk",
+        "link": "#"
+      }
+    }
+  },
+
+  "whyChooseSection": {
+    "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1200",
+
+    "subtitle": "We are the best.",
+
+    "heading": "Why choose us",
+
+    "description1": "Your search for our services ends here. We deliver modern interior solutions that perfectly balance comfort, beauty and functionality for every living space.",
+
+    "description2": "Our experienced team focuses on premium craftsmanship, creative concepts and attention to detail to bring your dream interiors to life.",
+
+    "button": {
+      "text": "Let's talk",
+      "link": "#"
+    }
+  }
+}
