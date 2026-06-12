@@ -1,6 +1,4 @@
 ---
-// src/components/sections/AboutAndWhyChoose.astro
-
 import aboutData from "../data/sec049.json";
 import chooseData from "../data/sec049.json";
 
@@ -27,15 +25,14 @@ const choose = (chooseData as any).whyChooseSection;
         <img
           src={about.topCard.image}
           alt={about.topCard.heading}
-          class="h-[320px] w-[72%] object-cover shadow-lg lg:h-[450px]"
+          class="h-[320px] w-[65%] object-cover shadow-lg lg:h-[450px]"
         />
       </div>
 
       <!-- CARD -->
       <div
-        class="absolute right-0 top-8 w-[320px] bg-white p-8 shadow-2xl lg:w-[420px] lg:p-10"
+        class="absolute right-0 top-8 w-[340px] bg-white p-8 shadow-2xl lg:w-[520px] lg:p-10"
       >
-
         <p class="text-[11px] text-[#7b7b7b]">
           {about.topCard.subtitle}
         </p>
@@ -47,11 +44,11 @@ const choose = (chooseData as any).whyChooseSection;
           {about.topCard.heading}
         </h3>
 
-        <p class="mt-4 text-[14px] leading-[1.9] text-[#555]">
+        <p class="mt-4 text-[15px] leading-[1.9] text-[#555]">
           {about.topCard.description}
         </p>
 
-        <p class="mt-5 text-[14px] leading-[1.9] text-[#555]">
+        <p class="mt-5 text-[15px] leading-[1.9] text-[#555]">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Ut est nobis, harum eos doloremque veritatis.
         </p>
@@ -62,7 +59,6 @@ const choose = (chooseData as any).whyChooseSection;
         >
           {about.topCard.button.text}
         </a>
-
       </div>
 
     </div>
@@ -71,7 +67,7 @@ const choose = (chooseData as any).whyChooseSection;
     <div class="relative">
 
       <!-- IMAGE -->
-      <div class="ml-auto w-[78%] overflow-hidden rounded-sm">
+      <div class="ml-auto w-[70%] overflow-hidden rounded-sm">
         <img
           src={choose.image}
           alt={choose.heading}
@@ -81,9 +77,8 @@ const choose = (chooseData as any).whyChooseSection;
 
       <!-- CARD -->
       <div
-        class="absolute left-0 top-1/2 w-[320px] -translate-y-1/2 bg-white p-8 shadow-2xl lg:w-[500px] lg:p-10"
+        class="absolute left-0 top-1/2 w-[340px] -translate-y-1/2 bg-white p-8 shadow-2xl lg:w-[620px] lg:p-10"
       >
-
         <p class="text-[12px] font-medium text-[#777]">
           {choose.subtitle}
         </p>
@@ -95,11 +90,11 @@ const choose = (chooseData as any).whyChooseSection;
           {choose.heading}
         </h2>
 
-        <p class="mt-4 text-[14px] leading-[1.9] text-[#555]">
+        <p class="mt-4 text-[15px] leading-[1.9] text-[#555]">
           {choose.description1}
         </p>
 
-        <p class="mt-5 text-[14px] leading-[1.9] text-[#555]">
+        <p class="mt-5 text-[15px] leading-[1.9] text-[#555]">
           {choose.description2}
         </p>
 
@@ -109,7 +104,6 @@ const choose = (chooseData as any).whyChooseSection;
         >
           {choose.button.text}
         </a>
-
       </div>
 
     </div>
