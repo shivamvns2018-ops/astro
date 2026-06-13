@@ -1,0 +1,66 @@
+---
+import data from "../data/sec051.json";
+
+const section = data.designProcessSection;
+---
+
+<section class="bg-[#f8f5ef] py-16 lg:py-24">
+  <div class="mx-auto w-[95%] max-w-[1600px]">
+
+    <!-- Header -->
+    <div class="mx-auto mb-14 max-w-3xl text-center">
+      <span class="mb-3 inline-block border border-[#b68d40]/30 px-4 py-1 text-xs font-semibold uppercase tracking-[3px] text-[#b68d40]">
+        {section.badge}
+      </span>
+
+      <h2 class="mb-4 text-4xl font-bold text-[#2c221c] md:text-5xl">
+        {section.title}
+      </h2>
+
+      <p class="text-base leading-relaxed text-[#6b625d]">
+        {section.description}
+      </p>
+    </div>
+
+    <!-- Process Cards -->
+    <div class="grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+
+      {section.steps.map((step) => (
+        <div class="group overflow-hidden rounded-2xl border border-[#e6dfd3] bg-white transition duration-300 hover:-translate-y-1 hover:shadow-xl">
+
+          <!-- Image -->
+          <div class="overflow-hidden">
+            <img
+              src={step.image}
+              alt={step.title}
+              loading="lazy"
+              class="h-[240px] w-full object-cover transition duration-700 group-hover:scale-105"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="p-6">
+
+            <div class="mb-4 flex items-center gap-4">
+              <div class="flex h-12 w-12 items-center justify-center rounded-full border border-[#b68d40] text-lg font-bold text-[#b68d40]">
+                {step.number}
+              </div>
+
+              <h3 class="text-xl font-semibold text-[#2c221c]">
+                {step.title}
+              </h3>
+            </div>
+
+            <p class="text-sm leading-7 text-[#666]">
+              {step.description}
+            </p>
+
+          </div>
+
+        </div>
+      ))}
+
+    </div>
+
+  </div>
+</section>

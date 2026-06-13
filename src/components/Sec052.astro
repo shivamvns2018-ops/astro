@@ -1,0 +1,60 @@
+---
+import data from "../data/sec052.json";
+
+const section = data.freeDeliverablesSection;
+---
+
+<section class="bg-[#43352e] py-16 lg:py-24 text-white">
+  <div class="mx-auto w-[95%] max-w-[1500px]">
+
+    <div class="mb-14 text-center">
+      <span class="inline-block border border-[#b68d40] px-4 py-2 text-xs font-semibold uppercase tracking-[3px] text-[#b68d40]">
+        {section.badge}
+      </span>
+
+      <h2 class="mx-auto mt-6 max-w-4xl text-4xl font-bold md:text-5xl">
+        {section.title}
+      </h2>
+
+      <p class="mx-auto mt-5 max-w-3xl text-lg text-white/80">
+        {section.description}
+      </p>
+
+      <div class="mt-8 inline-flex rounded-full bg-[#b68d40] px-8 py-4 text-lg font-bold text-[#2c221c]">
+        {section.valueText}
+      </div>
+    </div>
+
+    <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-5">
+
+      {section.items.map((item) => (
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:border-[#b68d40]">
+
+          <div class="mb-5 text-5xl font-bold text-[#b68d40]/30">
+            {item.number}
+          </div>
+
+          <h3 class="mb-4 text-xl font-semibold">
+            {item.title}
+          </h3>
+
+          <p class="text-sm leading-7 text-white/75">
+            {item.description}
+          </p>
+
+        </div>
+      ))}
+
+    </div>
+
+    <div class="mt-14 text-center">
+      <a
+        href="#contact"
+        class="inline-flex items-center rounded-full bg-[#b68d40] px-8 py-4 font-semibold text-[#2c221c] transition hover:scale-105"
+      >
+        Claim Your Free Design Package
+      </a>
+    </div>
+
+  </div>
+</section>

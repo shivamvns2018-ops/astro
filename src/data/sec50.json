@@ -1,0 +1,67 @@
+{
+  "featuredProjectsSection": {
+    "badge": "Our Portfolio",
+    "title": "Featured Projects",
+    "description": "Discover our carefully curated interior design projects that blend creativity, functionality, and timeless elegance. Every space is thoughtfully designed to reflect our clients' vision and lifestyle.",
+    "buttonText": "View All Projects",
+    "buttonLink": "/projects",
+    "projects": [
+      {
+        "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+        "title": "Modern Luxury Living Room",
+        "category": "Residential",
+        "location": "Dallas, TX",
+        "description": "A sophisticated living space featuring custom furniture, ambient lighting, and premium finishes."
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1505693536294-233b40425c8a",
+        "title": "Elegant Master Bedroom",
+        "category": "Residential",
+        "location": "Plano, TX",
+        "description": "A calming bedroom retreat designed with luxurious textures and personalized details."
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+        "title": "Contemporary Kitchen Design",
+        "category": "Residential",
+        "location": "Frisco, TX",
+        "description": "A modern kitchen featuring smart storage solutions and sleek custom cabinetry."
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72",
+        "title": "Corporate Office Interior",
+        "category": "Commercial",
+        "location": "Richardson, TX",
+        "description": "An inspiring workspace created to boost productivity and employee collaboration."
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0",
+        "title": "Luxury Dining Space",
+        "category": "Residential",
+        "location": "McKinney, TX",
+        "description": "A stylish dining area crafted for comfort, elegance, and memorable gatherings."
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8",
+        "title": "Boutique Retail Store",
+        "category": "Commercial",
+        "location": "Allen, TX",
+        "description": "A visually engaging retail environment designed to elevate the customer experience."
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1513694203232-719a280e022f",
+        "title": "Minimalist Home Office",
+        "category": "Residential",
+        "location": "Arlington, TX",
+        "description": "A productive and elegant home office with custom furniture and smart storage."
+      },
+      {
+        "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+        "title": "Luxury Hotel Lobby",
+        "category": "Commercial",
+        "location": "Irving, TX",
+        "description": "A grand hospitality space featuring premium finishes, statement lighting, and modern elegance."
+      }
+    ]
+  }
+}

@@ -1,0 +1,89 @@
+---
+import data from "../data/sec50.json";
+
+const section = data.featuredProjectsSection;
+const projects = section?.projects || [];
+---
+
+<section class="bg-[#efede4] py-16 lg:py-24">
+  <div class="mx-auto w-[95%] max-w-[1600px]">
+
+    <!-- Header -->
+    <div class="mx-auto mb-14 max-w-3xl text-center">
+      <span class="mb-4 inline-block rounded-full bg-[#43352e]/10 px-4 py-2 text-sm font-semibold text-[#43352e]">
+        {section.badge}
+      </span>
+
+      <h2 class="mb-5 text-4xl font-bold text-[#2c221c] md:text-5xl">
+        {section.title}
+      </h2>
+
+      <p class="text-lg leading-relaxed text-[#6b625d]">
+        {section.description}
+      </p>
+    </div>
+
+    <!-- Projects Grid -->
+    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+      {projects.map((project) => (
+        <article class="group overflow-hidden rounded-3xl bg-white shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl">
+
+          <!-- Image -->
+          <div class="overflow-hidden">
+            <img
+              src={project.image}
+              alt={project.title}
+              loading="lazy"
+              class="h-[220px] w-full object-cover transition duration-700 group-hover:scale-110"
+            />
+          </div>
+
+          <!-- Content -->
+          <div class="p-5">
+
+            <div class="mb-4 flex items-center justify-between gap-3">
+              <span class="rounded-full bg-[#b68d40]/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-[#b68d40]">
+                {project.category}
+              </span>
+
+              <span class="text-sm text-[#7b746e]">
+                {project.location}
+              </span>
+            </div>
+
+            <h3 class="mb-3 text-xl font-bold text-[#2c221c]">
+              {project.title}
+            </h3>
+
+            <p class="mb-5 text-sm leading-relaxed text-[#666]">
+              {project.description}
+            </p>
+
+            <a
+              href="#"
+              class="inline-flex items-center gap-2 font-semibold text-[#43352e] transition hover:text-[#b68d40]"
+            >
+              View Project
+              <span>→</span>
+            </a>
+
+          </div>
+
+        </article>
+      ))}
+
+    </div>
+
+    <!-- CTA -->
+    <div class="mt-14 text-center">
+      <a
+        href={section.buttonLink}
+        class="inline-flex items-center rounded-full bg-[#43352e] px-8 py-4 font-semibold text-white transition duration-300 hover:bg-[#2c221c]"
+      >
+        {section.buttonText}
+      </a>
+    </div>
+
+  </div>
+</section>

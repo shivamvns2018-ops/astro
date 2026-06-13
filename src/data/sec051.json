@@ -1,0 +1,45 @@
+{
+  "designProcessSection": {
+    "badge": "How We Work",
+    "title": "Our Design Process",
+    "description": "From concept to completion, we follow a streamlined process that ensures every project is delivered with creativity, precision, and exceptional attention to detail.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Initial Consultation",
+        "image": "https://images.unsplash.com/photo-1556911220-bff31c812dba",
+        "description": "We begin by understanding your vision, lifestyle, goals, budget, and design preferences."
+      },
+      {
+        "number": "02",
+        "title": "Concept Development",
+        "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742",
+        "description": "Our designers create mood boards, layouts, and design concepts tailored to your space."
+      },
+      {
+        "number": "03",
+        "title": "Design Planning",
+        "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858",
+        "description": "Detailed plans, material selections, color palettes, and furniture layouts are finalized."
+      },
+      {
+        "number": "04",
+        "title": "Project Execution",
+        "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e",
+        "description": "Our team manages procurement, installation, and construction while ensuring quality standards."
+      },
+      {
+        "number": "05",
+        "title": "Final Styling",
+        "image": "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85",
+        "description": "Decor, lighting, artwork, and finishing touches are carefully placed to complete the space."
+      },
+      {
+        "number": "06",
+        "title": "Project Handover",
+        "image": "https://images.unsplash.com/photo-1497366754035-f200968a6e72",
+        "description": "We conduct a final walkthrough to ensure every detail exceeds your expectations."
+      }
+    ]
+  }
+}
