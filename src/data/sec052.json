@@ -2,8 +2,9 @@
   "freeDeliverablesSection": {
     "badge": "100% Free Before You Hire Us",
     "title": "What Do You Get Free — Before Paying a Single Rupee?",
-    "description": "After one consultation call, receive five professional design deliverables absolutely free. These typically cost ₹15,000–₹40,000 in design fees, but you get them at zero cost — whether or not you hire us.",
+    "description": "After one consultation call, receive six professional design deliverables absolutely free. These typically cost ₹15,000–₹40,000 in design fees, but you get them at zero cost whether or not you hire us.",
     "valueText": "Worth ₹15,000 – ₹40,000",
+    "image": "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=1400&q=80",
     "items": [
       {
         "number": "01",
@@ -13,22 +14,27 @@
       {
         "number": "02",
         "title": "3D Design Renders",
-        "description": "Realistic views of your living room, kitchen, and bedrooms so you can judge the design before execution."
+        "description": "Realistic views of your living room, kitchen, and bedrooms so you can evaluate the design before execution begins."
       },
       {
         "number": "03",
         "title": "Scope of Work (SOW)",
-        "description": "Every task documented including false ceiling, electrical points, carpentry, painting, and finishing work."
+        "description": "A detailed document covering false ceiling, electrical points, carpentry, painting, and every execution activity."
       },
       {
         "number": "04",
         "title": "Materials & Brands Plan",
-        "description": "Complete material specifications including plywood, laminates, hardware, finishes, and recommended brands."
+        "description": "Complete material specifications including plywood, laminates, hardware brands, finishes, and product recommendations."
       },
       {
         "number": "05",
         "title": "Itemized Cost Sheet",
-        "description": "Every item priced separately with Good, Better, and Best options so you stay in control of your budget."
+        "description": "Every item priced separately with Good, Better, and Best options, giving you complete budget control."
+      },
+      {
+        "number": "06",
+        "title": "Design Theme Options",
+        "description": "Receive 2–3 curated design concepts tailored to your lifestyle, preferences, and project requirements."
       }
     ]
   }
